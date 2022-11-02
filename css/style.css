@@ -7,6 +7,23 @@ li, p, dd, dt, dl
     padding: 0px;
 }
 
+::-webkit-scrollbar-track
+{
+    background: #fb5;
+}
+
+::-webkit-scrollbar
+{
+    width: 8px;
+    background: #fb5;
+}
+
+::-webkit-scrollbar-thumb
+{
+    background: #222;
+    border-radius: 0;
+}
+
 img
 {
     display: block;
@@ -247,3 +264,6 @@ body
     }
 
 }
+
+
+
