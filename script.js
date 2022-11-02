@@ -57,3 +57,67 @@ console.log(h2Animais)
 
 const paragrafos = document.querySelectorAll('p');
 console.log(paragrafos[--paragrafos.length]);
+
+const imgs = document.querySelectorAll('img')
+
+let i = 0;
+imgs.forEach(function(item, index)
+{
+    console.log(item, index)
+});
+
+const titulos = document.getElementsByClassName('titulo');
+const titulosArray = Array.from(titulos);
+
+titulosArray.forEach(function(item){
+  console.log(item);
+});
+
+
+const imgs2 = document.querySelectorAll('imgs2');
+
+imgs.forEach((item) => {
+  console.log(item);
+});
+
+const imgs3 = document.querySelectorAll('img');
+
+// parâmetro único não precisa de parênteses
+imgs.forEach(item => {
+  console.log(item);
+});
+
+// multiplos parâmetros precisam de parênteses
+imgs.forEach((item, index) => {
+  console.log(item, index);
+});
+
+
+
+//EXERCÍCIO
+// Mostre no console cada parágrado do site
+const paragrafoss = document.querySelectorAll('p');
+console.log(paragrafoss);
+
+paragrafoss.forEach((item) =>{
+    console.log(item);
+});
+
+// Mostre o texto dos parágrafos no console
+paragrafoss.forEach((item) =>{
+    console.log(item.in);
+});
+
+// Como corrigir os erros abaixo:
+const imgs5 = document.querySelectorAll('img5');
+
+imgs.forEach((item, index) => {
+  console.log(item, index);
+});
+
+   /* let i = 0;
+    imgs.forEach(() => {
+    console.log(i++);
+    });*/
+
+imgs.forEach(() => i++);
