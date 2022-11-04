@@ -149,11 +149,12 @@ animais.attributes[0]; // retorna o primeiro atributo
 //Métodos que retornam ou definem de acordo com o atributo selecionado
 
 const imgs1 = document.querySelector('imgs1');
-
+/*
 img.getAttribute('src'); // valor do src
 img.setAttribute('alt', 'Texto Alternativo'); // muda o alt
 img.hasAttribute('id'); // true / false
 img.removeAttribute('alt'); // remove o alt
+*/
 
 img.hasAttributes(); // true / false se tem algum atributo
 
@@ -173,11 +174,29 @@ animais.attributes = 'class="ativo"'; // não funciona, read-only
 //Lembre-se que podemos modificar o valor de uma propriedade objeto.propriedade = ''
 
 
-EXERCÍCIO
+//EXERCÍCIO
 // Adicione a classe ativo a todos os itens do menu
+const itensMenu = document.querySelectorAll('.menu a');
+
+itensMenu.forEach((item )=>{ 
+item.classList.add('ativo');
+});
 
 // Remove a classe ativo de todos os itens do menu e mantenha apenas no primeiro
 
-// Verifique se as imagens possuem o atributo alt
+itensMenu.forEach((item )=>{ 
+  item.classList.remove('ativo');
+});
+itensMenu[0].classList.add('ativo');
 
+// Verifique se as imagens possuem o atributo alt
+const imgs = document.querySelectorAll('img');
+
+imgs.forEach((img) => {
+  const possuiAtibuto = img.hasAttribute('alt');
+  console.log('img, possuiAtributo');
+})
 // Modifique o href do link externo no menu
+
+const link = document.querySelectorAll('a[href^="http"]');
+link.setAttribute('href', 'https:www.google.com/');
