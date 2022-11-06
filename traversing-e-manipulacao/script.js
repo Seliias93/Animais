@@ -1,4 +1,4 @@
-// Duplique o menu e adicione ele em copy
+ // Duplique o menu e adicione ele em copy
 const menu = document.querySelector('.menu');
 const copy = document.querySelector('.copy');
 
