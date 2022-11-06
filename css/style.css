@@ -246,7 +246,7 @@ body
     {
         grid-column: 1;
     }
-    .faq-lista, .dados, .mapa
+.faq-lista, .dados, .mapa
     {
         grid-column: 1/3;
     }
